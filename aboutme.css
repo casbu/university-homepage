@@ -1,0 +1,49 @@
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+section#aboutme{
+    line-height: 60px;
+}
+
+section#detail {
+    line-height: 30px;
+}
+
+section#detail div {
+    padding: 50px;
+}
+
+h4 {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+img#turtle {
+    height: 250px;
+    padding: 20px;
+    flex-basis: 0.5em;
+}
+
+aside {
+    font-size: 0.9em;
+}
+aside span {
+    font: normal 1.5em Dosis;
+}
+
+section#detail span {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 641px){
+    img#turtle {
+        height: 355px;
+    }
+    section#detail{
+        font-size: 1.3em;
+    }
+
+}

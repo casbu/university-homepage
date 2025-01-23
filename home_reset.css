@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/* all devices and conditions */
+
+header, nav, footer, section{ 
+   display: block;
+}
+
+body, div, dl, dt, dd, em, footer, 
+h1, h2, header, html, img, 
+li, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+
+/* default page element styles */
+
+body {
+   line-height: 1em;
+}
+
+ul, ol {
+   list-style: none;
+}
+
+nav ul {
+   list-style: none;
+   list-style-image: none;
+}
+
+nav a {
+   text-decoration: none;
+}

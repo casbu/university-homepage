@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rate my Work</title>
+        <link rel="stylesheet" href="home_reset.css">
+        <link rel="stylesheet" href="home_styles.css">
+        <link rel="stylesheet" href="anims.css">
+        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="validate.css">
+        <!-- <script src="contact.js" defer></script> -->
+    </head>
+    <body>
+        <header>
+            <h1><img id="logo" src="assets/casbulogo.png" alt="user logo">The Home of <em>Cass</em></h1>
+            <nav>
+                <div class="navicon" onmouseover()="navIcon(this)">
+                    <div class="ham1"></div>
+                    <div class="ham2"></div>
+                    <div class="ham3"></div>
+                </div>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="assignments_3030.html">Assignments</a></li>
+                    <li><a href="review.html">Review this Page</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="https://github.com/casbu">Github</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="container">
+            <section id=""main>
+                <h1>Contact Me</h1>
+                <p>*Required Information</p>
+                <form action="http://www.cterrellburleson.com/msu/cis3030/rate" method="post" onsubmit="alert('Thanks 😎 I will reach out to you in 3-5 business days!');">
+                    <label for="idList">Type of Inquiry</label>
+                    <select name="idType" id="isList">
+                        <option value="business">Business Opportunity</option>
+                        <option value="collab">Collaboration</option>
+                        <option value="job">Job/Internship Opportunity</option>
+                        <option value="service">Service Inquiry</option>
+                        <option value="request">Request for Information</option>
+                        <option value="general">General</option>
+                    </select>
+                    <label for="fBox">First Name*</label>
+                    <input name="firstName" id="fBox" type="text" required>
+                    <label for="lBox">Last Name*</label>
+                    <input name="lasttName" id="lBox" type="text" required>
+                    <label for="mailBox">Email*</label>
+                    <input name="email" id="mailBox" type="email" required>
+                    <label for="phoneBox">Phone</label>
+                    <input name="phone" id="phoneBox" type="phone">
+                    <label for="commBox">Write your message here:</label>
+                    <textarea name="comments" id="commBox" required></textarea>
+                    <p>
+                        <input type="submit" value="Submit" onclick="submit_alert()">
+                    </p>
+                </form>
+            </section>
+        </div>
+    </body>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a class="external-link" href="contact.html">Contact Me</a></li>
+                <li><a class="external-link" href="review.html">Review this Page</a></li>
+                <li><a class="external-link" href="assignments_3030.html">CIS3030 Assignments</a></li>
+                <li><a class="external-link" href="https://github.com/casbu">Github Projects</a></li>
+            </ul>
+        </nav>
+        <p>CASS BURLESON &#9760; CIS 3030-001 &nbsp; FALL 2024 &#9731; MSU DENVER</p>
+    </footer>
+</html>

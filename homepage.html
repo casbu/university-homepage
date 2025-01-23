@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cass's Homepage</title>
+        <link rel="stylesheet" href="home_reset.css">
+        <link rel="stylesheet" href="home_styles.css">
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="anims.css">
+        <script src="home.js" defer></script>
+    </head>
+    <!--
+    Author:                 Cass Burleson
+    MSU Denver login name:  CTERREL3
+    Date Created:           2024-11-19
+    Date Due:               2024-12-01
+    Modified:               2024-11-30
+    Filename:               homepage.html
+    Purpose:                Landing Page for CTERREL3's work in CIS3030
+    Editor:                 VS Code
+    -->
+
+    <!-- AUTHOR NOTES
+    mobile nav animation is wonky. Would create seperate container that becomes static upon hover 
+    to maybe resolve issue but not enough time to look into it. Thought about having animation when 
+    hovering over nav container but did not have the intended result.
+    -->
+    
+    <body>
+        <header>
+            <h1><img id="logo" src="assets/casbulogo.png" alt="user logo">The Home of <em>Cass</em></h1>
+            <div id="currentTime">
+                <span>date</span><span>time</span>
+            </div>
+            <nav>
+                <div class="navicon" onmouseover="navIcon(this)">
+                    <div class="ham1"></div>
+                    <div class="ham2"></div>
+                    <div class="ham3"></div>
+                </div>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="assignments_3030.html">Assignments</a></li>
+                    <li><a href="review.html">Review this Page</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="https://github.com/casbu">Github</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="container" class="graduation">
+            <h1>Days 'til Graduation</h1>
+            <section id="countdown">
+                <div><span id="dLeft">10</span><br/>days</div>
+                <div><span id="hLeft">10</span><br/>hours</div>
+                <div><span id="mLeft">10</span><br/>minutes</div>
+                <div><span id="sLeft">10</span><br/>seconds</div>
+            </section>
+        </div>
+
+        <div id="container" class="projects">
+            <h2>Popular Projects</h2>
+            <section id="projects">
+                <aside>
+                    <h3>Purchase Order DBMS</h3>
+                    <p>Python, SQL, Microsoft Access - Clean, Build, Document Handling (Queries, Forms, Reports)</br></br><a href="https://github.com/casbu/DB-Cleaner-Example" alt="Microsoft Access Github Project">View Project</a></p>
+                </aside>
+                <aside>
+                    <h3>Puzzle-Based Password Cracker</h3>
+                    <p>Python - Matrix Manipulation, Transformation Logic</br></br><a href="https://github.com/casbu/Python-Projects/tree/main/Puzzle-Based%20Password%20Generator" alt="Python Github Project">View Project</a></p>
+                </aside>
+                <aside>
+                    <h3>Brunch Box</h3>
+                    <p>HTML, CSS, Javascript - Vanilla JS E-Commerce Site</br></br><a href="https://github.com/casbu/BrunchBox" alt="E-Commerce Cite Github Project">View Project</a></p>
+                </aside>
+                <aside>
+                    <h3>Horror Woods 2.0</h3>
+                    <p>Phaser, Javascript - JRPG-based HTML5 Video Game<br /><br /><em>In Progress</em></br></br><a href="https://github.com/casbu/BrunchBox" alt="Video Game Github Project">View Project</a></p>
+                </aside>
+            </section>
+        </div>
+        
+        <div id="container" class="table-schedule">
+            <section id="wkshed">
+                <h1>Weekly Schedule</h1>
+                <p>Cass's schedule is packed with all kinds of activities for personal growth and wellness.<br /> You can <a href="#" class="external-link">listen</a> to what music they like and even check out an <a class="external-link" href="https://github.com/casbu/Horror-Woods">HTML5 game</a> they've been building in their free time.</p>
+                <table class="schedule">
+                    <caption>Mountain Standard Time</caption>
+                    <colgroup span="3">
+                        <col id="timeCol">
+                        <col class="dayCol" span="5">
+                        <col class="wkendCol" span="2">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Mon</th>
+                            <th>Tues</th>
+                            <th>Wed</th>
+                            <th>Thurs</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>5:00 AM</th>
+                            <td rowspan="2">&#129355; Taekwondo (Practice)</td>
+                            <td rowspan="2">&#128164; Sleep</td>
+                            <td rowspan="2">&#129355; Taekwondo (Practice)</td>
+                            <td rowspan="2">&#128164; Sleep</td>
+                            <td rowspan="3">&#128164; Sleep</td>
+                            <td rowspan="4">&#128164; Sleep</td>
+                            <td rowspan="4">&#128164; Sleep</td>
+                        </tr>
+                        <tr>
+                            <th>6:00 AM</th>
+                        </tr>
+                        <tr>
+                            <th>7:00 AM</th>
+                            <td>&#128085; Get Ready</td>
+                            <td>&#128085; Get Ready</td>
+                            <td>&#128085; Get Ready</td>
+                            <td>&#128085; Get Ready</td>
+                        </tr>
+                        <tr>
+                            <th>8:00 AM</th>
+                            <td rowspan="6">&#128187; Work</td>
+                            <td rowspan="9">&#128187; Work</td>
+                            <td rowspan="9">&#128187; Work</td>
+                            <td rowspan="5">&#128187; Work</td>
+                            <td>&#127859; Breakfast</td>
+                        </tr>
+                        <tr>
+                            <th>9:00 AM</th>
+                            <td>&#128085; Get Ready</td>
+                            <td rowspan="4">&#127794; Hike</td>
+                            <td rowspan="2">&#128250; Morning Cartoons</td>
+                        </tr>
+                        <tr>
+                            <th>10:00 AM</th>
+                            <td rowspan="2">&#129355; Taekwondo (Forms)</td>
+                        </tr>
+                        <tr>
+                            <th>11:00 AM</th>
+                            <td rowspan="4">&#127794; Hike</td>
+                        </tr>
+                        <tr>
+                            <th>12:00 PM</th>
+                            <td rowspan="4">&#128663; Groceries / Errands</td>
+                        </tr>
+                        <tr>
+                            <th>1:00 PM</th>
+                            <td rowspan="4">&#128214; Library / Class</td>
+                            <td>&#127857; Lunch</td>
+                        </tr>
+                        <tr>
+                            <th>2:00 PM</th>
+                            <td rowspan="4">&#128214; Library / Class</td>
+                            <td rowspan="4">&#128218; Study</td>
+                        </tr>
+                        <tr>
+                            <th>3:00 PM</th>
+                            <td>&#127857; Lunch</td>
+                        </tr>
+                        <tr>
+                            <th>4:00 PM</th>
+                            <td rowspan="2">&#128214; Library</td>
+                            <td rowspan="3">&#128187; Code</td>
+                        </tr>
+                        <tr>
+                            <th>5:00 PM</th>
+                            <td>&#9742; Catch Up</td>
+                            <td rowspan="3">&#127890; Class</td>
+                            <td>&#9742; Catch Up</td>
+                        </tr>
+                        <tr>
+                            <th>6:00 PM</th>
+                            <td>&#128126; Game</td>
+                            <td>&#128126; Game</td>
+                            <td>&#128126; Game</td>
+                            <td rowspan="3">&#127867; Drinks with Friends</td>
+                            <td rowspan="3">&#129368; Dinner Out</td>
+                        </tr>
+                        <tr>
+                            <th>7:00 PM</th>
+                            <td>&#129368; Dinner</td>
+                            <td>&#129368; Dinner</td>
+                            <td>&#129368; Dinner</td>
+                            <td>&#129368; Dinner</td>
+                        </tr>
+                        <tr>
+                            <th>8:00 PM</th>
+                            <td>&#128214; Read</td>
+                            <td>&#128214; Read</td>
+                            <td>&#129368; Dinner</td>
+                            <td>&#128214; Read</td>
+                            <td>&#128126; Game</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="8">Give a Student a Break &#9749;</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </div>
+        
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a class="external-link" href="contact.html">Contact Me</a></li>
+                    <li><a class="external-link" href="review.html">Review this Page</a></li>
+                    <li><a class="external-link" href="assignments_3030.html">CIS3030 Assignments</a></li>
+                    <li><a class="external-link" href="https://github.com/casbu">Github Projects</a></li>
+                </ul>
+            </nav>
+            <p>This Web site was created in partial fulfillment of my CIS 3030 course requirements.</p><br/>
+            <p>CASS BURLESON &#9760; CIS 3030-001 &nbsp; FALL 2024 &#9731; MSU DENVER</p>
+        </footer>
+    </body>
+</html>

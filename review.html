@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rate my Work</title>
+        <link rel="stylesheet" href="home_reset.css">
+        <link rel="stylesheet" href="home_styles.css">
+        <link rel="stylesheet" href="anims.css">
+        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="validate.css">
+        <script src="review.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1><img id="logo" src="assets/casbulogo.png" alt="user logo">The Home of <em>Cass</em></h1>
+            <nav>
+                <div class="navicon" onmouseover()="navIcon(this)">
+                    <div class="ham1"></div>
+                    <div class="ham2"></div>
+                    <div class="ham3"></div>
+                </div>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="assignments_3030.html">Assignments</a></li>
+                    <li><a href="review.html">Review this Page</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="https://github.com/casbu">Github</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="container">
+            <section id=""main>
+                <h1>Rate My Work</h1>
+                <p>Please fill out the following form to let Cass know how they did this semester:</p>
+                <form action="http://www.cterrellburleson.com/msu/cis3030/rate" method="post">
+                    <div id="contactInfo">
+                        <label for="rateList">Who Are You?</label>
+                        <select name="rateType" id="rateList">
+                            <option value="prof">Professor</option>
+                            <option value="peer">Classmate</option>
+                            <option value="facstaff">Faculty/Staff</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="fBox">First Name</label>
+                        <input name="firstName" id="fBox" type="text">
+                        <label for="lBox">Last Name*</label>
+                        <input name="lasttName" id="lBox" type="text" required>
+                        <label for="mailBox">Email*</label>
+                        <input name="email" id="mailBox" type="email" required>
+                    </div>
+                    <fieldset>
+                        <legend>Rating</legend>
+                        <div>
+                            <label for="review">Poor</label>
+                            <input name="review" type="radio" value="bad" >
+                            <label for="review">Keep Practicing</label>
+                            <input name="review" type="radio" value="okay">
+                            <label for="review">Nicely Done</label>
+                            <input name="review" type="radio" value="good">
+                            <label for="review">Stellar!</label>
+                            <input name="review" type="radio" value="great">
+                        </div>
+                    </fieldset>
+                    <div id="comments">
+                        <label for="commBox">Leave any comments here:</label>
+                    <textarea name="comments" id="commBox">Congrats on graduating!</textarea>
+                    </div>
+                    <p>
+                        <input type="submit" value="Submit">
+                    </p>
+                </form>
+            </section>
+        </div>
+    </body>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a class="external-link" href="contact.html">Contact Me</a></li>
+                <li><a class="external-link" href="review.html">Review this Page</a></li>
+                <li><a class="external-link" href="assignments_3030.html">CIS3030 Assignments</a></li>
+                <li><a class="external-link" href="https://github.com/casbu">Github Projects</a></li>
+            </ul>
+        </nav>
+        <p>CASS BURLESON &#9760; CIS 3030-001 &nbsp; FALL 2024 &#9731; MSU DENVER</p>
+    </footer>
+</html>

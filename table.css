@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+table.schedule {
+    border: 5px outset rgb(103, 42, 146);
+    width: 100%;
+    background: radial-gradient(rgb(241, 227, 255), rgb(173, 172, 172));
+    color: black;
+    font-weight: bold;
+    
+}
+
+table.schedule caption {
+    caption-side: bottom;
+    text-align: right;
+    color: rgb(198, 171, 0);
+    padding-right: 10px;
+    background: black;
+}
+
+table.schedule tbody tr {
+    height: 30px;
+}
+
+table.schedule thead {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(73, 75, 76));
+    color: black;
+    font-size: 0.95em;
+}
+
+table.schedule tbody td {
+    padding: 5px;
+    font-size: 0.7em;
+    vertical-align: center;
+    text-align: center;
+    border: 1px solid rgb(238, 92, 218);
+}
+
+table.schedule tfoot td{
+    background: gray;
+    color: black;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+table.schedule tbody tr th {
+    background: white;
+    color: black;
+}
